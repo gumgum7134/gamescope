@@ -627,7 +627,7 @@ bool CVulkanDevice::selectPhysDev()
 		vk.GetPhysicalDeviceProperties(cphysDev, &deviceProperties);
 		VkPhysicalDeviceProperties propss;
 		vk.GetPhysicalDeviceProperties( cphysDev, &propss );
-		vk_log.infof("Detected GPU %s",propss.deviceName)
+		vk_log.infof("Detected GPU %s",propss.deviceName);
 		if (deviceProperties.apiVersion < VK_API_VERSION_1_2)
 			continue;
 
